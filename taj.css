@@ -83,6 +83,7 @@ nav .logo{
     font-weight: 500;
     text-decoration: none;
     letter-spacing: 1px;
+    transition: all .5s ease;
     
     
 }
@@ -93,4 +94,23 @@ section .btnone{
 section .btntwo{
     background: #00b894;
     color: #000;
+}
+
+section .btnone,.btntwo:hover{
+    background-color: aqua;
+}
+section .content-change::after{
+       
+    content: '';
+    animation: change 10s infinite linear;
+    color: #00b894;
+
+} 
+@keyframes change {
+    0%{content: "darrjelling";}
+    20% {content: "Agra";}
+    35% {content: "Kerla";}
+      60%{content: "Delhi";}
+      80%{content: "Mumbai";}
+      100%{content: "Jaiur";}
 }
